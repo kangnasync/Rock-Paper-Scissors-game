@@ -5,7 +5,7 @@ const msg=document.querySelector("#msg");
 const userScorePara=document.querySelector("#user-score");
 const compScorePara=document.querySelector("#comp-score");
 
-/*let modebtn=document.querySelector("#modee");
+let modebtn=document.querySelector("#themeBtn");
 let currmode="light";
 modebtn.addEventListener("click",()=>{
     if(currmode==="light"){
@@ -20,7 +20,7 @@ modebtn.addEventListener("click",()=>{
     }
     console.log(currmode);
 });
-*/
+
 const themeToggle = document.getElementById("themeBtn");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
