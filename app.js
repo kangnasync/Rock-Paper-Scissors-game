@@ -5,7 +5,7 @@ const msg=document.querySelector("#msg");
 const userScorePara=document.querySelector("#user-score");
 const compScorePara=document.querySelector("#comp-score");
 
-let modebtn=document.getElementById("#themeBtn");
+/*let modebtn=document.getElementById("#themeBtn");
 let currmode="light";
 modebtn.addEventListener("click",()=>{
     if(currmode==="light"){
@@ -19,15 +19,19 @@ modebtn.addEventListener("click",()=>{
         document.querySelector("body").style.color="black";
     }
     console.log(currmode);
-});
+});*/
 
 const themeToggle = document.getElementById("themeBtn");
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     if (document.body.classList.contains("dark")) {
         themeToggle.textContent = "☀️";
+        document.querySelector("body").style.backgroundColor="black";
+        document.querySelector("body").style.color="white";
     } else {
         themeToggle.textContent = "🌙";
+        document.querySelector("body").style.backgroundColor="white";
+        document.querySelector("body").style.color="black";
     }
 });
 
