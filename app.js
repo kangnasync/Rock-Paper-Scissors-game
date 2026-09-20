@@ -5,7 +5,7 @@ const msg=document.querySelector("#msg");
 const userScorePara=document.querySelector("#user-score");
 const compScorePara=document.querySelector("#comp-score");
 
-let modebtn=document.querySelector("#modee");
+/*let modebtn=document.querySelector("#modee");
 let currmode="light";
 modebtn.addEventListener("click",()=>{
     if(currmode==="light"){
@@ -19,6 +19,16 @@ modebtn.addEventListener("click",()=>{
         document.querySelector("body").style.color="black";
     }
     console.log(currmode);
+});
+*/
+const themeToggle = document.getElementById("themeBtn");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
 });
 
 const genCompChoice=()=>{
